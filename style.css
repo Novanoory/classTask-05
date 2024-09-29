@@ -4,8 +4,46 @@ body{
    margin:0;
 }
 #cont2{
+ display: flex;
+   
+}
+#cont1{
+    background-color: black;
+    width: 15%;
+    margin-left: 35%;
+    height: 35%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 400px;
+    width: 35%;
+    
+}
+#box1{
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+#box2{
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    
+}
+#box3{
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+   
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 50px;
 }
