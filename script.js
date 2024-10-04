@@ -83,7 +83,11 @@ const calculateAge = (birthDetails, currentYear, currentMonth, currentDate) => {
     return getDaysInMonth[month - 1];
    };
 
-
+const displayResult = (bdate, bMonth, bYear) => {
+    document.getElementById("years").textContent =  bYear;
+    document.getElementById("months").textContent =  bMonth;
+    document.getElementById("days").textContent =  bdate;
+};
 
 
 
