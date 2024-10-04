@@ -65,8 +65,23 @@ const calculateAge = (birthDetails, currentYear, currentMonth, currentDate) => {
    };
 
    const getDaysInMonth = (month, year) => {
-    const isLeapYear = year % 4 === 0
-   }
+    const isLeapYear = year % 4 === 0 && (year % 100 != 0 || year % 400 === 0);
+    const getDaysInMonth = [
+        31,
+        isLeapYear ? 29 : 28,
+        31,
+        30,
+        31,
+        30,
+        31,
+        31,
+        30,
+        31,
+        30,
+        31,
+    ];
+    return getDaysInMonth[month - 1];
+   };
 
 
 
